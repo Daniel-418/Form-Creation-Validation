@@ -31,7 +31,7 @@ function eventListener(event) {
     feedbackDiv.style.display = "block";
     if (isValid == true) {
       feedbackDiv.textContent = "Registration successful!";
-      feedbackDiv.style.backgroundColor = "green";
+      feedbackDiv.style.color = "#28a745";
     }
     else {
       feedbackDiv.innerHTML = messages.join("<br>");

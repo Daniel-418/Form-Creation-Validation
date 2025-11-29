@@ -35,6 +35,7 @@ function eventListener(event) {
     }
     else {
       feedbackDiv.innerHTML = messages.join("<br>");
+      feedbackDiv.style.color = "#dc3545";
     }
 
   })

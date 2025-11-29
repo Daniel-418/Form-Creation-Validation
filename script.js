@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', eventListener)
+
+function eventListener(event) {
   const form = document.getElementById("registration-form");
   const feedbackDiv = document.getElementById("form-feedback");
   form.addEventListener('submit', (event) => {
@@ -35,5 +37,5 @@ document.addEventListener('DOMContentLoaded', () => {
       feedbackDiv.innerHTML = messages.join("<br>");
     }
 
-  });
-})
+  })
+}
